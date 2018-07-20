@@ -1,0 +1,109 @@
+ <!DOCTYPE html>
+<html>
+<head>
+        <title> cap days </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/inscri.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+        <div class="container cont">
+         <div class="col-md-6 col-sm-8 col-xs-12 col-md-offset-3 col-sm-offset-2 main">
+          <form id='form' class="form-horizontal" onsubmit="submitForm">
+            <legend><b style="color:#fff">REGISTRATION FORM</b></legend>
+            <div class="form-group">
+              <label class="col-md-3 control-label" >NAME:</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control"id='name'>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" >EMAIL:</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control"id='email'>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-3 control-label" >CONTACT :</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control"id='contact'>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label">COUNTRY:</label>
+              <div class="col-md-9">
+                <select class="form-control" id='country'>
+                    <option>Tunis</option>
+                    <option>Ben arous</option>
+                    <option>Ariena</option>
+                    <option>Nabel</option>
+                    <option>Zaghoune</option> 
+                    <option>Soussa</option>
+                    <option>Mounastir</option>
+                    <option>Mahdia</option>
+                    <option>Beja</option>
+                    <option>Bizert</option>
+                    <option>Klibya</option>
+                    <option>Sfax</option>
+                    <option>Jandouba</option>
+                    <option>Gafssa</option>
+                    <option>Touzer</option>
+                    <option>Gbeli</option>
+                    <option>Jandouba</option>
+                    <option>Jerba</option>
+                    <option>Kairoun </option>
+                    <option>Kef</option>
+                    <option>jandouba</option>
+                    <option>Mednin</option>
+                    <option>Sidi bouzid </option>
+                    <option>Tataouin </option>
+                   
+
+                 </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label">Address:</label>
+              <div class="col-md-9">
+                <textarea  class="form-control" id='address' width="100%"></textarea>
+              </div>
+            </div>
+             <div class="form-group" >
+               <label class="col-md-3 control-label">OCCUPATION:</label>
+              <div class="col-md-9">
+     
+             <label class="checkbox-inline">
+                  <input type="checkbox" id="occupation">kids
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="occupation">young 
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="occupation">Adult
+                </label>
+               
+             </div>
+             </div>
+
+            <div class="form-group">
+            
+                <button class="btn btn-primary pull-right save">
+                  <span class="glyphicon glyphicon-floppy-disk " onclick="submitForm()">Save</span>
+                </button>
+              </div>  
+            </div>
+          </form>
+        </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        <script src="js/inscri.js"></script>
+        
+</body>
+</html>
